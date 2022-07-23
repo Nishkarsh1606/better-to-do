@@ -1,4 +1,9 @@
-const daysOfWeek=['Monday','Tue','Wed','Thu','Fri','Sat','Sun']
-const weekday=new Date()
-let today=daysOfWeek[weekday.getDay()]
-console.log(today);
+let d= new Date()
+let options={
+    weekday:'long',
+    month:'numeric',
+    year:'numeric',
+    // day:'long'
+}
+let displayDate=d.toLocaleDateString('en-US')
+console.log(displayDate);
