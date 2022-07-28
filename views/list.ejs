@@ -7,6 +7,7 @@
     <title>List view</title>
 </head>
 <body>
+<<<<<<< HEAD
     <h1>It's <%=kindOfDay%> today</h1>
     <h3><%= messageForDay %> </h3>
     <ul style="list-style:none;">
@@ -18,6 +19,18 @@
     <form action="/" method="POST">
         <input type="text" placeholder="Add new item" name="newItem">
         <button type="submit">Add Item</button>
+=======
+    <h1><%=kindOfDay%></h1>
+    <h3><%=messageForDay%></h3>
+    <ul style="list-style:none;">
+        <li>Buy food</li>
+        <li>Cook food</li>
+        <li>Eat food</li>
+    </ul>
+    <form action="/" method="post">
+        <input type="text" name="newListItem" id="input-list-item">
+        <button type="submit">Add</button>
+>>>>>>> 781136b2b2b16c0dac808ff69e6c57831416f708
     </form>
 </body>
 </html>
