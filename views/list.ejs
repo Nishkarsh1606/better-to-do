@@ -9,5 +9,15 @@
 <body>
     <h1>It's <%=kindOfDay%> today</h1>
     <h3><%= messageForDay %> </h3>
+    <ul style="list-style:none;">
+        <li>Buy food</li>
+        <li>cook food</li>
+        <li>eat food</li>
+        <li><%= newListItem %> </li>
+    </ul>
+    <form action="/" method="POST">
+        <input type="text" placeholder="Add new item" name="newItem">
+        <button type="submit">Add Item</button>
+    </form>
 </body>
 </html>
