@@ -56,5 +56,3 @@ app.post("/", (request, response) => {
   newTasksArray.push(newTasks);
   response.redirect("/");
 });
-
-let trialVariable="message"
