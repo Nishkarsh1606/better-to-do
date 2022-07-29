@@ -20,7 +20,6 @@ let today = daysOfWeek[weekday.getDay()];
 console.log(today);
 
 app.get("/", function (request, response) {
-
   //trying toLocalString method
   let options = {
     month: "long",
@@ -57,3 +56,5 @@ app.post("/", (request, response) => {
   newTasksArray.push(newTasks);
   response.redirect("/");
 });
+
+let trialVariable="message"
