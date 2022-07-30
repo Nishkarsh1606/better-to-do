@@ -3,9 +3,13 @@ const express=require('express')
 const app=express()
 const bodyParser=require('body-parser')
 const ejs = require('ejs');
+
+const date=require(__dirname+"/date.js")
+console.log(date.getDay());
+
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({extended:true}))
-app.set("view engine", "ejs")
+app.set("view engine", 'ejs')
 let newTasksArray=[]
 
 
